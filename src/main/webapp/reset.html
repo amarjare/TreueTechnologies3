@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reset Password</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-image:url("images/ig.jpg");
+    background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.2s;
+    text-decoration: none;
+  }
+  
+  .button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>Reset Password</h2>
+  <form method="post" action="change" onsubmit="return verifyPassword()">
+    <label for="otp">Enter OTP:</label>
+    <input type="text" id="otp" name="otp" placeholder="Enter the OTP" required>
+    <label for="newPassword">Enter New Password:</label>
+    <input type="password" id="newPassword" name="newPassword" placeholder="Enter the new password" required>
+    <label for="confirmPassword">Confirm New Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm the new password" required>
+    <button type="submit" class="button">Reset Password</button>
+  </form>
+</div>
+<script>
+	function verifyPassword() {
+		var password = document.getElementById("newPassword").value;
+       var confirmPassword = document.getElementById("confirmPassword").value;
+       if (password !== confirmPassword) {
+                alert("Password and Confirm Password should match.");
+                return false;
+            }
+            
+            return true;
+		
+		
+	}
+	
+</script>
+</body>
+</html>

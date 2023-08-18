@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>E-Book Store Login</title>
+
+    <style>
+
+        body {
+
+        	background-image:url("https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1856&q=80");
+
+          	background-repeat:no-repeat;
+
+			background-size: cover;
+
+			background-position: center;
+
+            font-family: Arial, sans-serif;
+
+            margin: 100px 550px;
+
+        }
+
+        a{
+        text-decoration:none;
+        text-align:center;
+        }
+
+        .login-container {
+
+            background-color: pink;
+
+            border-radius:8px;
+
+            border:5px solid black;
+
+            box-shadow: 0 12px 15px rgba(0, 0, 0, 0.1);
+
+            padding: 30px;
+
+            width: 350px;
+
+            max-width: 100%; }
+
+            
+
+        .login-container h2 {
+
+            text-align: center;
+
+            margin-bottom: 20px;
+
+            color: #007BFF;
+
+        }
+
+        .login-container label,
+
+        .login-container input {
+
+            display: block;
+
+            width: 100%;
+
+            margin-bottom: 20px;
+
+        }
+
+        .login-container input[type="text"],
+
+        .login-container input[type="password"] {
+
+            padding: 10px;
+
+            border: 1px solid #ccc;
+
+            border-radius: 4px;
+
+            font-size: 16px;
+
+        }
+
+        .login-container input[type="submit"] {
+
+            padding: 10px 20px;
+
+            background-color: #007BFF;
+
+            color: #fff;
+
+            border: none;
+
+            border-radius: 4px;
+
+            cursor: pointer;
+
+            font-size: 16px;
+
+            transition: background-color 0.3s ease;
+
+        }
+        p{
+			margin-left:50px;
+			color:red;
+			background-color: white;
+			width:350px;
+		}
+
+        .login-container input[type="submit"]:hover {
+
+            background-color: #0056b3;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <h2>Login to E-Book Store</h2>
+
+        <form action="login" method="post"> 
+
+            <label for="username">Username:</label>
+
+            <input type="text" id="username" name="username" placeholder="ENTER MOBILE NUMBER" required>
+
+
+
+            <label for="password">Password:</label>
+
+            <input type="password" id="password" name="password"  placeholder="ENTER PASSWORD"  required>
+
+
+
+            <input type="submit" value="Login">
+
+            <a href=register.html>NEW USER?CREATE ACCOUNT</a><br>
+
+             <a href=forgot.html>FORGOT PASSWORD</a>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
+

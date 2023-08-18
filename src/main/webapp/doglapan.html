@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+  }
+
+  .container {
+    display: flex;
+    max-width: 1000px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .image-container {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+  }
+
+  .image-container img {
+    max-width: 100%;
+    height: 600px;
+  }
+
+  .info-container {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+  }
+
+  .book-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .author {
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 5px;
+  }
+
+  .price {
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 5px;
+  }
+
+  .rating {
+    font-size: 18px;
+    color: #ffa500;
+    margin-bottom: 10px;
+  }
+
+  .add-to-cart {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  .add-to-cart:hover {
+    background-color: #2980b9;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="image-container">
+    <img src="images/doglpan.jpeg" alt="Book Cover">
+  </div>
+  <div class="info-container">
+    <h1 class="book-title">Doglapan</h1>
+    <p class="price"> In Doglapan: The Hard Truth About Life and Start-Ups, Ashneer Grover takes a deep dive into entrepreneurship. He candidly breaks down the harsh realities that come with taking on such an endeavor and introduces readers to the idea of “doglapan” - a combination of determination and resilience required to make a successful entrepreneur 💪
+
+Grover first examines how having clarity about one's goals is essential for success. He explores various strategies entrepreneurs can use to clarify their intentions, including making lists or breaking down objectives into smaller chunks.
+
+Furthermore, he explains how passion should always be at the forefront when pursuing business opportunities; if you don't have passion driving your decisions, then you won't find yourself dedicated enough to persist through inevitable challenges 🤔</p>
+    <h1 class="book-title"> AUTHOR : Ashneer Grover</h1> 
+    <p class="price">PRICE : 260 Rs.</p>
+    <p class="rating">Rating: 4.4/5</p>
+    <form method="GET" action="cart">
+			<input type="hidden"   name="bn" value="Doglapan"/>
+			<input type="hidden"   name="ba" value="Ashneer Grover"/>
+			<input type="hidden"   name="pr" value="260"/>
+			<input type="submit" class="add-to-cart" value="Add to Cart" />
+	</form>
+  </div>
+</div>
+</body>
+</html>

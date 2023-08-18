@@ -1,0 +1,36 @@
+div{
+	height:auto;
+	width:700px;
+	background-color: pink;
+	border-radius: 10px;
+	align-items: center;
+	margin:60px 380px;
+}
+body{
+	 background-image:url("images/l1.jpg");
+      background-repeat:no-repeat;
+	  background-size: cover;
+	  background-position: center;
+	  padding: auto;
+}
+a{
+			text-decoration:none;
+}
+table{
+	padding:20px 20px 20px 20px;
+}
+th, td {
+ border: 1px solid;
+ text-align: center;
+}
+h1{
+text-align: center;	
+}
+td{
+	align-items: center;
+	height: 20px;
+	width:50px;
+}
+.long{
+	width:230px;
+}

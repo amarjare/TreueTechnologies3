@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+  }
+
+  .container {
+    display: flex;
+    max-width: 1000px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .image-container {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+  }
+
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .info-container {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+  }
+
+  .book-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .author {
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 5px;
+  }
+
+  .price {
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 5px;
+  }
+
+  .rating {
+    font-size: 18px;
+    color: #ffa500;
+    margin-bottom: 10px;
+  }
+
+  .add-to-cart {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  .add-to-cart:hover {
+    background-color: #2980b9;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="image-container">
+    <img src="images/Unlocking Unicorn Secret.jpg" alt="Book Cover">
+  </div>
+  <div class="info-container">
+    <h1 class="book-title">Unlocking Unicorn Secrets</h1>
+    <p class="price"> 
+In 2022, India, second only to the US, produced more unicorns than any other country in the world. Although ours is a vibrant ecosystem that encourages young minds to take the entrepreneurial plunge, the road ahead is full of pitfalls.
+Unlocking Unicorn Secrets captures the entrepreneurial journeys of some of India’s new-age founders and looks at the challenges they faced and how they overcame them. It covers themes such as developing an idea, building out the minimum viable product (MVP), finding a co-founder, setting up the founding team, raising funds and scaling the business, among others. Through primary research and a series of interviews conducted with the founders of these billion-dollar companies, the authors weave a narrative that is both accessible and informative.
+    </p>
+    <h1 class="book-title"> AUTHOR : ushal Lodha, Ishan Sharma</h1> 
+    <p class="price">PRICE : 380 Rs.</p>
+    <p class="rating">Rating: 4.1/5</p>
+    <form method="GET" action="cart">
+			<input type="hidden"   name="bn" value="Unlocking Unicorn Secrets"/>
+			<input type="hidden"   name="ba" value="ushal Lodha, Ishan Sharma"/>
+			<input type="hidden"   name="pr" value="380"/>
+			<input type="submit" class="add-to-cart" value="Add to Cart" />
+	</form>
+  </div>
+</div>
+</body>
+</html>

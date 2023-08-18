@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forgot Password</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-image:url("images/homepagebackground.jpg");
+    background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    margin:225px 530px;
+  }
+  
+  .container {
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.2s;
+    text-decoration: none;
+  }
+  
+  .button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>Forgot Password</h2>
+  <form action=otp>
+    <label for="mobile">Mobile Number:</label>
+    <input type="text" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+    <input  type="submit" value="SEND OTP" class="button"/>
+  </form>
+</div>
+</Script>
+</body>
+</html>

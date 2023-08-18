@@ -1,0 +1,185 @@
+.header{
+
+	padding:10px;
+
+	margin:auto;
+
+	border-radius:10px;
+
+	height:auto;
+
+	width:98%;
+
+	text-align:center;
+
+	background-color:pink;
+
+	position:center;
+
+	border:5px solid black;
+
+}
+.bt{
+	height:25px;
+	width:100px;
+	background-color:dodgerblue;
+	font-size: 15px;
+	color: white;
+	border-radius: 5px;
+	border:2px solid black;
+	align-items: center;
+	
+}
+.bt:hover{
+	background-color: goldenrod;
+	color: black;
+}
+.d3{
+	width:1260px;
+	padding-left:250px;
+}
+.ip1{
+	width:300px;height:20px;
+	border-radius: 5px;
+}
+::-webkit-input-placeholder {
+  text-align: center;
+}
+.search{ 
+ background-color: chartreuse;
+ padding-left: 400px;
+}
+
+.i1{
+	height: 200px;
+	width: 150px;
+	border-radius: 5px;
+}
+
+.recent{
+	height:220px;
+	text-align: center;
+	width:100%px;
+	display:flex;
+	padding:20px 20px 20px 120px;
+	grid-gap:70px;
+}
+h3{
+	color:darkred;
+	background-color:darkcyan;
+	font-size:25px;
+	font-weight:900;
+	font-style:oblique;
+	margin:10px 580px;
+	text-align: center;
+	font-family:cursive ;
+}
+
+.d2{
+	height:200px;
+	width:150px;
+	border:2px solid black;
+	border-radius:5px;
+
+}
+
+p{
+
+	font-size:25px;
+
+}
+
+.heading{
+
+	font-family:forte;
+
+	font-size:45px;
+
+}
+
+.container{
+
+	display:flex;
+
+	gap:25px;
+
+}
+
+.container1{
+
+	background-image:url('images/logo.png');
+
+}
+
+.a1{
+
+	padding:15px;
+
+	color:white;
+
+	text-decoration:none;
+
+}
+.a2{
+	color:black;
+	text-decoration:none;
+}
+.a2:hover{
+
+	font-size: 20px;
+	color:blue;
+
+}
+
+.a1:hover{
+
+	color:blue;
+
+}
+
+.d1:hover{
+
+	background-color:yellow;
+	color:blue;
+
+}
+
+.d1{
+
+	padding:10px;
+
+	margin:10px;
+
+	font-family: "Times New Roman", Times, serif;
+
+	font-size:20px;
+
+	height:auto;
+
+	width:200px;
+
+	background-color:green;
+
+	text-align:center;
+
+	color:white;
+
+	border-radius:5px;
+
+}
+ .footer {
+            background-color: rgb(128, 128, 255);
+            width:98%;
+            height: 50px;
+            margin:50px 0px 0px 0px;
+            padding: 1rem ;
+            text-align: center;
+        }
+
+.footer p {
+			color:black;
+            margin: 0;
+            padding:auto auto;
+            font-size: 20px;
+          /*  font-size: 0.8rem;*/
+        }

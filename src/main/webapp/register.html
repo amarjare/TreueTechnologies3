@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="ISO-8859-1">
+
+<title>registration form</title>
+
+<style type="text/css">
+
+.container{
+
+background-color:pink;
+
+margin:100px 750px;
+
+height:400px;
+
+width:500px;
+
+border-radius:10px;
+
+border:3px solid black;
+
+padding:20px 20px;
+
+}
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+input{
+
+width:200px;
+
+height:20px;}
+
+a{
+text-decoration:none;
+color:rgb(0, 0, 255);
+text-align: center;
+}
+a:hover{
+	color:blue;
+}
+
+.bt{
+text-align:center;
+font-size: 15px;
+background-color:dodgerblue;
+color:white;
+height:25px;width:80px;
+border-radius:3px;
+}
+input{
+	width: 250px;
+	height:25px;
+}
+.bt:hover{
+	background-color: blue;
+}
+body{
+
+background-image:url(images/regback.jpeg);
+
+background-repeat:no-repeat;
+
+background-size: cover;
+
+background-position: center center;
+
+ }
+
+h1{
+
+text-align:center;
+
+}
+.td1{
+	text-align: center;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<H1>REGISTRATION FORM</H1>
+
+<form action=register     method="post" onsubmit="return validateForm()">
+
+<table>
+
+<tr> <td><label>NAME :</label></td><td><input type="text" id="name" name="name" placeholder="ENTER NAME" required autofocus/></td></tr>
+
+<tr> <td><label>DATE OF BIRTH :</label></td><td><input name="dob"  id="dob" type="date"  required /></td></tr>
+
+<tr> <td><label>GENDER</label></td>
+
+<td>
+
+<select name="gender">
+
+<option value="male">MALE</option>
+
+<option value="female">FEMALE</option>
+
+</select></td></tr>
+
+<tr> <td><label>MOBILE:</label></td><td><input type="text" name="mobile" id="mobile" placeholder="ENTER YOUR 10 DIGIT  MOBILE NO"  required /></td></tr>
+
+<tr> <td><label>EMAIL:</label></td><td><input type="text" name="email" id="email" placeholder="ENTER EMAILID"   required /></td></tr>
+
+<tr> <td><label>ENTER PASSWORD:</label></td><td><input type="password" id="password" name="password" placeholder="ENTER PASSWORD"  required /></td></tr>
+
+<tr> <td><label>CONFIRM PASSWORD:</label></td><td><input type="password"  name="cpassword" id="cpassword"  placeholder="CONFIRM PASSWORD"  required /></td></tr>
+
+<tr></tr>
+
+<tr></tr><tr></tr>
+
+<tr></tr><tr></tr>
+
+<tr  > <td class="td1"><input type="submit"  class="bt"/></td><td class="td1"><input type="reset"  class="bt"/></td></tr>
+
+</table>
+
+<br>
+
+<a href="login.html">ALREADY HAVE ACCOUNT? CLICK HERE TO LOGIN</a>
+<br>
+<a href="BookVerse.html">CLICK HERE TO GO TO HOMEPAGE</a>
+
+</form> 
+
+</div>
+<script>
+        function validateForm() {
+            var firstName = document.getElementById("name").value;
+            var dob = document.getElementById("dob").value;
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("cpassword").value;
+            var email = document.getElementById("email").value;
+
+       
+            var dobYear = parseInt(dob.substr(0, 4));
+            var currentYear = new Date().getFullYear();
+            if (dobYear >= 2013) {
+                alert("Date of birth year should be less than 2013.");
+                return false;
+            }
+
+            // Check if password and confirm password match
+            if (password !== confirmPassword) {
+                alert("Password and Confirm Password should match.");
+                return false;
+            }
+
+            // Check if email is in a proper format
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!email.match(emailPattern)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+
+            // If all checks pass, allow the form to be submitted
+            return true;
+        }
+    </script>
+
+</body>
+
+</html>
